@@ -13,6 +13,7 @@ header{
     background-repeat: no-repeat;
     background-size:auto, 99px;
     height: 80vh;
+    overflow: hidden;
 }
 /* ######################      style     ################ */
 .primary-color{
@@ -64,8 +65,10 @@ ul li {
 /* hero  */
 .Hero{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    height: 100%;
+    margin-top: 90px;
 }
 .hero-text{
     width: 50%;
@@ -123,7 +126,6 @@ main{
     margin-top: 120px;
     
 }
-
 .about{
     background-color: #FFF8F3;
     text-align: center;
@@ -219,7 +221,7 @@ footer{
 
 .footer-section{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 .footer-content-title{
     font-size: 42px;

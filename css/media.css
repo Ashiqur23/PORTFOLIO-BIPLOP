@@ -1,284 +1,255 @@
-@media (max-width: 1200px) and (min-width: 150px)  {
+@media screen and (max-width: 1251PX) and (min-width: 0PX)  {
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+    *{
+        margin: 0px;
+        font-family: 'Open Sans', sans-serif;
+    }
     .container{
-        margin: 0px 10px;
+        margin: 0px 5px;
         overflow: hidden;
     }
     header{
         background-color: #FFF8F3;
         background-image: url("../images/header_bg.png");
-        background-position:bottom center;
+        background-position:bottom left;
         background-repeat: no-repeat;
-        background-size:auto;
-        height: 100vh;
-        margin: 0px;
+        background-size: contain;
+        height: 100%;
+        overflow: hidden;
+        padding-bottom: 10px;
     }
+    
     nav{
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: flex-start;
         align-items: flex-start;
-        padding-top: 10px;
-        margin: 0px;
+        padding-top: 0px;
+        width: 100%;
     }
     nav h1{
-        font-size: 32px;
+        font-size: 42px;
         cursor: pointer;
-        margin: 0px;
+    
     }
     .items{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-items: stretch;
-        text-align: center;
-        margin: 5px 0px 0px 0px;
-        
-    }
-    .items button{
-        display: block;
-        font-size: 12px;
-        margin: 10px 0px 0px 0px;
+        align-items: flex-start;
     }
     ul{
         display: flex;
-        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         list-style: none;
         margin: 0px 0px;
+        margin-right: 0px;
+        padding: 0px;
     }
     ul li {
-        margin: 0px 0px ;
+        margin: 10px 0px ;
         font-weight: 500;
         font-size: 20px;
         cursor: pointer;
+        margin-right: 10px;
     }
     .nav-btn{
-        padding: 10px 25px;
+        padding: 6px 15px;
         border: none;
         color: #fff;
-        font-size: 20px;
+        font-size: 14px;
         font-weight: 500;
     }
-    /* hero section  */
+    
+    /* hero  */
     .Hero{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         height: 100%;
-        margin: 0px auto;
+        width: 100%;
     }
     .hero-text{
         width: 100%;
-        text-align: center;
-        margin: 50px auto 0px;
-        height: 180px
+        height: 50%;
+        padding-top: 20px;
+    
     }
     .hero-text h2{
        font-size: 42px;
        font-weight: 400;
     }
     .hero-text h1{
-       font-size: 32px;
+       font-size: 72px;
        font-weight: 700;
-       margin: 10px 0px;
     }
     .hero-text p{
-       font-size: 14px;
+       font-size: 18px;
        font-weight: 400;
        text-align: justify;
     }
-    .button-group{
-        margin-top: 20px;
-    }
+    
     .hero-img{
-        width: 310px;
+        width: 50%;
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin: 50px auto 0px;
     }
     .hero-img img{
         width: 100%;
-        margin-top: 5px;
-    }
-    .button-group{
-        display: none;
-    }
-    /* about  */
-main{
-    max-width: 100%;
-    margin: 0px auto;
-    margin-top: 0px;
     
-}
-
-.about{
-    background-color: #FFF8F3;
-    text-align: center;
-    padding: 80px 60px;
-    margin-bottom: 80px;
-}
-.section-title{
-    font-size: 42px;
-    line-height: 82px;
-}
-.about-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.about-info p{
-    font-size: 12px;
-}
-.about-infor{
-    font-size: 15px;
-    margin: 2px;
-}
-.about-name ,.about-email,
-.about-date-of-birth,
-.about-from{
-    margin: 5px;
-    margin-bottom: 8px;
-}
-/* second-section  */
-.second-sec{
-    text-align: center;
-}
-.section-description{
-    font-size: 12px;
-}
-.section-title{
-    font-size: 32px;
-}
-.second-items{
-    margin-top: 0px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-}
-.second{
-    background-color: #fff;
-    box-shadow: -5px 10px 23px -21px rgba(0,0,0,0.75);
-    margin-bottom: 10px;
-    padding: 30px 15px;
-    text-align: justify;
-}
-.second img{
-    width: 30px;
-    border: 2px solid rebeccapurple;
-}
-.second h3{
-    width: 100%;
-    line-height: 32px;
-    font-size: 16px;
-}
-.second p{
-    width: 100%;
-    font-size: 14px;
-    line-height: 30px;
-}
-/* A summary of My Resume  */
-.third-section{
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.third-sec h1{
-    text-align: center;
-    font-size: 25px;
-    width: 80%;
-    line-height: 30px;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-.third-section-flex{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-.third-section-data{
-    width: 100%;
-    margin-bottom: 10px;
-}
-.third-section-1{
-    padding: 5px 8px;
-    margin-bottom: 10px;
-    box-shadow: -5px 10px 23px -21px rgba(0,0,0,0.75);
-}
-.third-section-1 h3{
-    font-size: 12px;
-    margin: 0px;
-}
-.third-section-content{
-    padding: 10px 0px 20px;
-    line-height: 26px;
-    text-align: justify;
-    border-bottom: 1px solid #D1D1D1;
-}
-.third-section .button{
-    text-align: center;
-    font-size: 15px;
-}
-/* footer  */
-footer{
-    background-color: #FFF8F3;
-    padding: 40px 0px;
-}
-
-.footer-section{
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: start;
-    align-items: flex-start;
-}
-.footer-content-title{
-    font-size: 22px;
-    line-height: 30px;
-    width: 100%;
-}
-.footer-content p{
-    width: 100%;
-    font-size: 16px;
-    line-height: 32px;
-    text-align: justify;
-    margin: 10px 0px;
-
-}
-.footer-content {
-    width: 100%;
-    margin: 10px 0px;
-}
-
-.contact-info button{
-    font-size: 12px;
-}
-.contact-info input{
-    display: block;
-    width: 80%;
-    margin-bottom: 10px;
-    height: 40px;
-    padding-left: 10px;
-    border: none;
-}
-.contact-info h1{
-    font-size: 32px;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.contact-info textarea{
-    display: block;
-    width: 80%;
-    margin-bottom: 10px;
-    height: 100px;
-    padding-top: 10px;
-    padding-left: 10px;
-    border: none;
-    margin-bottom: 20px;
-}
-.icon img{
-    margin-top: 20px;
-    margin-right: 20px;
-}
+    }
+    
+    /* about  */
+    main{
+        max-width: 100%;
+        margin: 0px auto;
+        margin-top: 120px;
+        
+    }
+    
+    .about{
+        background-color: #FFF8F3;
+        text-align: center;
+        padding: 80px 60px;
+        margin-bottom: 80px;
+    }
+    .section-title{
+        font-size: 42px;
+        line-height: 82px;
+    }
+    .about-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .about-info p{
+        font-size: 12px;
+    }
+    .about-infor{
+        font-size: 15px;
+    }
+    
+    /* second-section  */
+    .second-sec{
+        text-align: center;
+    }
+    .second-items{
+        margin-top: 0px;
+        display: flex;
+        margin-bottom: 40px;
+        flex-direction: column;
+    }
+    .second{
+        background-color: #fff;
+        box-shadow: -5px 10px 23px -21px rgba(0,0,0,0.75);
+        margin: 10px;
+        padding: 30px 15px;
+        text-align: justify;
+    }
+    .second img{
+        width: 30px;
+        border: 2px solid rebeccapurple;
+    }
+    .second h3{
+        width: 100%;
+        line-height: 32px;
+        font-size: 16px;
+    }
+    .second p{
+        width: 100%;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
+    /* A summary of My Resume  */
+    .third-section{
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    .third-sec h1{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .third-section-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .third-section-data{
+        width: 100%;
+    }
+    .third-section-1{
+    
+        padding: 5px 8px;
+    }
+    .third-section-1 h3{
+        font-size: 25px;
+    }
+    .third-section-content{
+        padding: 10px 0px 20px;
+        line-height: 26px;
+        text-align: justify;
+        border-bottom: 1px solid #D1D1D1;
+    }
+    .third-section .button{
+        text-align: center;
+    }
+    
+    /* footer  */
+    footer{
+        background-color: #FFF8F3;
+        padding: 100px 0px;
+    }
+    
+    .footer-section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .footer-content-title{
+        font-size: 32px;
+        line-height: 100px;
+    }
+    .footer-content p{
+        width: 50%;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: justify;
+        margin-bottom: 10px;
+    }
+    .footer-content {
+        width: 100%;
+    }
+    .contact-info input{
+        display: block;
+        width: 80%;
+        margin-bottom: 10px;
+        height: 40px;
+        padding-left: 10px;
+        border: none;
+    }
+    .contact-info h1{
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+    .contact-info textarea{
+        display: block;
+        width: 80%;
+        margin-bottom: 10px;
+        height: 100px;
+        padding-top: 10px;
+        padding-left: 10px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .icon img {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
 }
